@@ -1,0 +1,590 @@
+/* Global Styles */
+html{
+    scroll-behavior: smooth;
+}
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+
+h1, a, h2, p {
+    margin: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.navbar .logo img {
+    width: 160px;
+    height: 80px;
+    margin-right: 10px;
+}
+
+.navbar .company-name {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navbar .links a {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #000;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+.navbar .links a:hover {
+    color:blue;
+}
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar .links {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar .links a {
+        margin: 5px 0;
+    }
+    
+    .hero {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .hero-content {
+        max-width: 100%;
+        width:fit-content;
+    }
+
+    .company-name {
+        margin-top: 50px;
+        font-size: 36px;
+    }
+
+    .hero-image {
+        margin-top: 20px;
+    }
+    
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+    }
+  
+    .about-text {
+        padding-right: 0;
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+
+    .about-image img {
+        max-width: 90%;
+    }
+
+    .services-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-item {
+        width: 100%;
+        max-width: 350px;
+        margin-bottom: 20px;
+    }
+
+    .services-heading, .testimonials-heading {
+        font-size: 28px;
+    }
+
+    .service-info ul li, .testimonial-text {
+        font-size: 16px;
+    }
+
+    .testimonial-author {
+        font-size: 14px;
+    }
+    
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .social-media ul {
+        justify-content: center;
+    }
+
+    .map-container iframe {
+        width: 100%;
+        height: 300px;
+    }
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    background-color: #eee;
+    background-image: url(/images/IMG-20250224-WA0001.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 50%;
+    z-index: 1;
+}
+
+.company-name {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 100px;
+    font-weight: bold;
+    color: #333;
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: slide-in-left 2s forwards;
+    margin-bottom:10px;
+}
+
+.contact-btn {
+    background-color:rgb(14, 109, 116);
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 20px;
+    border-radius: 20px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fade-in 2s 1s forwards;
+}
+
+.contact-btn:hover {
+    background-color: #000;
+    color:#fff;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    opacity: 0;
+    transform: translateX(100%);
+    animation: slide-in-right 2s forwards;
+}
+
+/* About Us Section */
+.about-us {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.about-heading {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: slide-in-left 1.5s forwards;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: slide-in-left 1.5s 0.5s forwards;
+}
+
+.about-text {
+    flex: 1;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+    padding-right: 20px;
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: slide-in-left 1.5s 1s forwards;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    opacity: 0;
+    transform: translateX(100%);
+    animation: slide-in-right 1.5s 1s forwards;
+}
+
+/* Map Section */
+.map-section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.map-section h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.map-container {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo img {
+    width: 160px;
+    height: 80px;
+    margin-right: 10px;
+}
+
+.footer-company-name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.footer-section {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.social-media ul {
+    display: flex;
+    gap: 10px;
+}
+
+.social-media ul li a img {
+    width: 40px;
+    height: 30px;
+}
+
+/* Our Services Section */
+.services {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.services-heading {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 30px;
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: slide-in-left 1.5s forwards;
+}
+
+.services-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: slide-in-left 2s 0.5s forwards;
+}
+
+.service-item {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease-in-out;
+}
+
+.service-item:hover {
+    transform: translateY(-5px);
+}
+
+.service-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.service-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.service-info ul li {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.service-info ul li .tick {
+    color: green;
+    margin-right: 10px;
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.testimonials-heading {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 30px;
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: slide-in-left 1.5s forwards;
+}
+
+.testimonials-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: slide-in-left 2s 0.5s forwards;
+}
+
+.testimonial-item {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+}
+
+.testimonial-item:hover {
+    transform: translateY(-5px);
+}
+
+.quote {
+    font-size: 40px;
+    color: red;
+    position: absolute;
+    top: -20px;
+    left: 10px;
+}
+
+.testimonial-text {
+    font-size: 18px;
+    color: #555;
+    margin: 20px 0;
+    font-style: italic;
+}
+
+.testimonial-author {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Animations */
+@keyframes slide-in-left {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide-in-right {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fade-in {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* WhatsApp Button */
+.whatsapp-popup {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+  }
+  
+  .whatsapp-btn {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: #25d366;
+    color: white;
+    font-weight: bold;
+    border-radius: 25px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+  }
+  
+  .whatsapp-btn:hover {
+    background-color: #128c7e;
+  }
+  
+  .whatsapp-icon {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+  }
+  
+  /* Popup Modal */
+  .popup {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+  
+  .popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+  }
+  
+  .close-btn {
+    font-size: 30px;
+    color: #333;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+  
+  .close-btn:hover {
+    color: red;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .whatsapp-btn {
+      font-size: 14px;
+      padding: 10px;
+    }
+  
+    .popup-content {
+      width: 90%;
+    }
+  }
+  
