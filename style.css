@@ -396,14 +396,14 @@ footer {
 /* Our Services Section */
 .services-section {
     padding: 40px 20px;
-    background-color: #f9f9f9;
+    background-color: #021bfa;
   }
   
   .services-section h2 {
     text-align: center;
     font-size: 32px;
     margin-bottom: 40px;
-    color: #333;
+    color: #fff;
   }
   
   .services-container {
