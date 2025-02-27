@@ -59,7 +59,7 @@ h1, a, h2, p {
 @media screen and (max-width: 768px) {
     .navbar {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
     }
 
     .navbar .links {
@@ -514,7 +514,7 @@ footer {
 .whatsapp-popup {
     position: fixed;
     bottom: 20px;
-    right: 40px;
+    right: 70px;
     z-index: 1000;
   }
   
