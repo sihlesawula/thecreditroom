@@ -392,6 +392,89 @@ footer {
 }
 
 
+
+/* Our Services Section */
+.services-section {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .services-section h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #333;
+  }
+  
+  .services-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  .service-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 250px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-10px); /* Hover effect */
+  }
+  
+  .service-card h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .service-card p {
+    color: #777;
+    font-size: 16px;
+  }
+  
+  /* Responsive Design for smaller screens */
+  @media (max-width: 768px) {
+    .services-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .service-card {
+      width: 80%;
+    }
+  
+    .services-section h2 {
+      font-size: 28px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .service-card {
+      width: 90%;
+    }
+  
+    .services-section h2 {
+      font-size: 24px;
+    }
+  
+    .service-card h3 {
+      font-size: 20px;
+    }
+  
+    .service-card p {
+      font-size: 14px;
+    }
+  }
+  
+
+
+
 /* Testimonials Section */
 .testimonials {
     padding: 50px 20px;
