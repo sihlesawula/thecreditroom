@@ -48,7 +48,7 @@ body {
 }
 
 
-h1, a, h2, h3, p {
+h1, a, h2, h4, p {
     margin: 0;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -94,6 +94,27 @@ h1, a, h2, h3, p {
 
 /* Media Query for smaller screens */
 @media screen and (max-width: 768px) {
+
+    .contact-btn {
+        background-color:rgb(5, 112, 46);
+        color: white;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        padding: 10px 20px;
+        font-size: 15px;
+        border: none;
+        cursor: pointer;
+        text-decoration: none;
+        margin-top: 30px;
+        border-radius: 20px;
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fade-in 2s 1s forwards;
+    }
+    
+    .contact-btn:hover {
+        background-color: #4de90f;
+        color:#fff;
+    }
     .navbar {
         flex-direction: column;
         align-items: center;
