@@ -118,6 +118,7 @@ h1, a, h2, p {
         width: 100%;
         max-width: 350px;
         margin-bottom: 20px;
+        margin-right:20px;
     }
 
     .services-heading, .testimonials-heading {
