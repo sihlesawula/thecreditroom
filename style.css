@@ -22,7 +22,7 @@ h1, a, h2, p {
     justify-content: space-between;
     align-items: center;
     background-color: #000;
-    padding: 10px;
+    padding: 30px;
 }
 
 .navbar .logo {
@@ -39,7 +39,7 @@ h1, a, h2, p {
 
 .navbar .company-name {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
+    font-size: 40px;
     font-weight: bold;
 }
 
@@ -197,7 +197,7 @@ h1, a, h2, p {
     color: white;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding: 10px 20px;
-    font-size: 30px;
+    font-size: 15px;
     border: none;
     cursor: pointer;
     text-decoration: none;
