@@ -293,6 +293,8 @@ body {
     text-transform: uppercase;
     margin-bottom: 20px;
     color: white;
+    text-align: center;
+    justify-content: center;
   }
   
   .blacklisted-list {
@@ -320,6 +322,8 @@ body {
   @media (max-width: 900px) {
     .blacklisted-heading {
       font-size: 24px; /* Adjust heading size for medium screens */
+      text-align:left;
+      justify-content: left;
     }
   
     .blacklisted-item a {
