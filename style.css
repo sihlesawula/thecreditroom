@@ -143,8 +143,8 @@ h1, a, h2, h4, p {
     }
 
     .company-name {
-        margin-top: 25px;
-        font-size: 36px;
+        margin-top: 10px;
+        font-size: 45px;
     }
 
     .hero-name {
@@ -259,10 +259,10 @@ h1, a, h2, h4, p {
 
 .guide {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 10px;
+    font-size: 20px;
     text-align: left;
     font-weight: bold;
-    color: #fff;
+    color: #dbb60e;
     opacity: 0;
     transform: translateX(-100%);
     animation: slide-in-left 2s forwards;
