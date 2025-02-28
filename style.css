@@ -270,6 +270,84 @@ h1, a, h2, h4, p {
 }
 
 
+
+
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #021bfa;
+    color: white;
+  }
+  
+  .blacklisted-section {
+    padding: 20px;
+    background-color: #021bfa;
+  }
+  
+  .blacklisted-heading {
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: white;
+  }
+  
+  .blacklisted-list {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .blacklisted-item {
+    margin: 10px 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .blacklisted-item a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+  }
+  
+  .blacklisted-item:hover {
+    transform: translateY(-10px); /* Float upwards effect */
+    opacity: 0.8;
+  }
+  
+  /* Responsive Design for smaller screens */
+  @media (max-width: 900px) {
+    .blacklisted-heading {
+      font-size: 24px; /* Adjust heading size for medium screens */
+    }
+  
+    .blacklisted-item a {
+      font-size: 16px; /* Smaller font size for items on medium screens */
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .blacklisted-heading {
+      font-size: 20px; /* Adjust heading size for small screens */
+      text-align: center; /* Center the heading on small screens */
+    }
+  
+    .blacklisted-item {
+      margin: 8px 0; /* Adjust item margin for smaller screens */
+    }
+  
+    .blacklisted-item a {
+      font-size: 14px; /* Smaller font size for items on smaller screens */
+    }
+  
+    .blacklisted-list {
+      padding-left: 20px; /* Add left padding for mobile screens */
+    }
+  }
+  
+
+
 .contact-btn {
     background-color:rgb(5, 112, 46);
     color: white;
