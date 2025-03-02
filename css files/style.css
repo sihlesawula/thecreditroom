@@ -3,30 +3,6 @@ html{
     scroll-behavior: smooth;
 }
 
-.picture-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns per row by default */
-    gap: 15px; /* Space between items */
-    margin: 20px; /* Margin around the grid */
-}
-
-.grid-item {
-    position: relative;
-    overflow: hidden;
-}
-
-.grid-item img {
-    width: 100%; /* Make images fill the grid item */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 8px; /* Optional: Add rounded corners */
-    transition: transform 0.3s ease; /* Optional: Add a hover effect */
-}
-
-.grid-item:hover img {
-    transform: scale(1.05); /* Slightly zoom in on hover */
-}
-
-
 /* Basic Popup Styling */
 .popup {
     display: flex;
@@ -62,8 +38,28 @@ html{
 }
 
 
+.picture-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns per row by default */
+    gap: 15px; /* Space between items */
+    margin: 20px; /* Margin around the grid */
+}
 
+.grid-item {
+    position: relative;
+    overflow: hidden;
+}
 
+.grid-item img {
+    width: 100%; /* Make images fill the grid item */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    transition: transform 0.3s ease; /* Optional: Add a hover effect */
+}
+
+.grid-item:hover img {
+    transform: scale(1.05); /* Slightly zoom in on hover */
+}
 
 /* For tablets and smaller devices */
 @media (max-width: 768px) {
