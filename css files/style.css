@@ -151,6 +151,7 @@ h1, a, h2, h4, p {
         text-align:left;
         justify-content:left;
         margin-right:50px;
+        margin-top:30px;
     }
 
     .hero-image {
@@ -217,6 +218,7 @@ h1, a, h2, h4, p {
         opacity: 0;
         transform: translateX(-100%);
         animation: slide-in-left 2s forwards;
+        margin-top:30px;
         margin-bottom:10px;
     }
 }
@@ -228,7 +230,7 @@ h1, a, h2, h4, p {
     align-items: center;
     height: 100vh;
     background-color: #000;
-    background-image: url(images/heroimage2.jpg);
+    background-image: url(/images/heroimage2.jpg);
     background-position: center;
     background-repeat: no-repeat;
     padding: 0 20px;
