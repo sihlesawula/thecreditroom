@@ -98,6 +98,7 @@
     .content-text {
       width: 100%;
       font-size: 1rem;
+      padding:5px;
     }
   
     .content-img {
@@ -106,7 +107,6 @@
 
     footer p {
         font-size: 0.8rem;
-        padding:5px;
       }
 
 
@@ -123,11 +123,11 @@
   
     .content-text {
       font-size: 0.9rsem;
+      padding:5px;
     }
   
     footer p {
       font-size: 0.8rem;
-      padding:5px;
     }
   }
   
