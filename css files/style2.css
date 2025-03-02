@@ -104,10 +104,12 @@
       width: 80%;
     }
 
-    h1, p {
-        padding:10px;
+    footer p {
+        font-size: 0.8rem;
+        padding:5px;
+      }
 
-    }
+
   }
   
   @media (max-width: 480px) {
@@ -120,16 +122,12 @@
     }
   
     .content-text {
-      font-size: 0.9rem;
+      font-size: 0.9rsem;
     }
   
     footer p {
       font-size: 0.8rem;
-    }
-
-    h1, p {
-        padding:10px;
-
+      padding:5px;
     }
   }
   
