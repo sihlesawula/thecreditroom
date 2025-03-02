@@ -103,6 +103,11 @@
     .content-img {
       width: 80%;
     }
+
+    body {
+        padding:10px;
+
+    }
   }
   
   @media (max-width: 480px) {
@@ -120,6 +125,11 @@
   
     footer p {
       font-size: 0.8rem;
+    }
+
+    body {
+        padding:10px;
+
     }
   }
   
